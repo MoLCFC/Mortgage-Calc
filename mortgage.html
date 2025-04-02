@@ -1,32 +1,58 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Untitled Document</title>
-<script language="JavaScript" src="calculator.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head>
-
-<body bgcolor="#CCFFFF">
-<div align="center"><font color="#666666" size="+5">Home Mortgage Calculator</font>
-</div>
-<table width="500" height="152" border="1" align="center" cellpadding="5" cellspacing="0" bgcolor="#CCFFCC">
-  <tr>
-	<td width="228" height="150" align="center" valign="middle">
-
-<div align="justify"><font color="#666666" face="Arial, Helvetica, sans-serif">
-To use the Home Mortgage Calculator enter the amount of the mortgage, the interest of the loan, and the number of years. Then click on the &quot;Calculate&quot; button to see an estimate of your monthly payment.
-</font></div>
-	
-	</td>
-
-	<td width="246" align="center" valign="middle">
-	<!-- add table and form inside this cell -->
-
+  <meta charset="UTF-8">
+  <title>Mortgage Calculator - My Web Application</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/calculator.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h2>My Web Application</h2>
+  </div>
   
-
-
-
-	</td>
-</tr>
-</table>
+  <!-- Navigation Menu -->
+  <div class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mortgage.html">Calculator</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+  
+  <!-- Main Content Container -->
+  <div class="container">
+    <h1>Mortgage Calculator</h1>
+    <p>
+      To use the Home Mortgage Calculator, enter the mortgage amount, the interest rate, and the term (in years). Then click the "Calculate" button to see an estimate of your monthly payment.
+    </p>
+    <table class="calc-table">
+      <tr>
+        <td>
+          <p>
+            Enter your mortgage details in the form.
+          </p>
+        </td>
+        <td>
+          <form name="Form1">
+            <label for="Amount">Mortgage Amount:</label>
+            <input type="text" name="Amount" id="Amount"><br>
+            
+            <label for="Rate">Interest Rate (%):</label>
+            <input type="text" name="Rate" id="Rate"><br>
+            
+            <label for="Years">Term (Years):</label>
+            <input type="text" name="Years" id="Years"><br>
+            
+            <label for="Payment">Monthly Payment:</label>
+            <input type="text" name="Payment" id="Payment" readonly><br>
+            
+            <input type="button" value="Calculate" onclick="mortCalc(this.form)">
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
 </body>
 </html>

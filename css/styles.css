@@ -1,0 +1,75 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #CCFFFF;
+  }
+  
+  /* Header styling */
+  .header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Navigation menu styling */
+  .nav {
+    background-color: #444;
+    overflow: hidden;
+  }
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav ul li {
+    float: left;
+  }
+  .nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  /* Clear floats after nav items */
+  .nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Container styling */
+  .container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  /* Table styles for the calculator page (if needed) */
+  table.calc-table {
+    width: 100%;
+    border: 1px solid #000;
+    background-color: #CCFFCC;
+    border-collapse: collapse;
+  }
+  table.calc-table td {
+    padding: 20px;
+    vertical-align: top;
+    border: 1px solid #000;
+  }
+  
+  /* Form styling for the mortgage calculator */
+  form[name="Form1"] label {
+    display: inline-block;
+    width: 130px;
+    margin-bottom: 10px;
+  }
+  form[name="Form1"] input[type="text"] {
+    margin-bottom: 10px;
+  }
+  
